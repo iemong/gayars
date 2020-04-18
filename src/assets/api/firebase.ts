@@ -1,7 +1,4 @@
 import * as firebase from 'firebase/app'
-import 'firebase/analytics'
-import 'firebase/auth'
-import 'firebase/storage'
 import 'firebase/database'
 
 const firebaseConfig = {
@@ -16,7 +13,5 @@ const firebaseConfig = {
 }
 
 // Initialize Firebase
-export const project = firebase.initializeApp(firebaseConfig)
-export const analytics = firebase.analytics()
-export const storage = firebase.storage()
+export const project = !firebase.apps.length ? firebase.initializeApp(firebaseConfig) : firebase.app()
 export const database = firebase.database()

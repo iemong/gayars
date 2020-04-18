@@ -2613,6 +2613,13 @@
     "@types/react" "*"
     "@types/webpack-env" "*"
 
+"@types/unique-string@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/unique-string/-/unique-string-2.0.0.tgz#14191b7a73ab4da2d218c3c7f7da2a7143b8984c"
+  integrity sha512-v+wjWF7NPzxL5HIm0mHonjcEvnMdSPUK1QmrS1ti3nPWS3fBN81cjp8Ue7rgucyMzQ/+yltBgjmR1b0V01QZnw==
+  dependencies:
+    unique-string "*"
+
 "@types/webpack-env@*", "@types/webpack-env@^1.13.7":
   version "1.14.1"
   resolved "https://registry.yarnpkg.com/@types/webpack-env/-/webpack-env-1.14.1.tgz#0d8a53f308f017c53a5ddc3d07f4d6fa76b790d7"
@@ -4729,6 +4736,11 @@ crypto-browserify@^3.11.0:
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
     randomfill "^1.0.3"
+
+crypto-random-string@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
+  integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
 
 css-blank-pseudo@^0.1.4:
   version "0.1.4"
@@ -12632,6 +12644,13 @@ unique-slug@^2.0.0:
   resolved "https://registry.yarnpkg.com/unique-slug/-/unique-slug-2.0.2.tgz#baabce91083fc64e945b0f3ad613e264f7cd4e6c"
   dependencies:
     imurmurhash "^0.1.4"
+
+unique-string@*, unique-string@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/unique-string/-/unique-string-2.0.0.tgz#39c6451f81afb2749de2b233e3f7c5e8843bd89d"
+  integrity sha512-uNaeirEPvpZWSgzwsPGtU2zVSTrn/8L5q/IexZmH0eH6SA73CmAA5U4GwORTxQAZs95TAXLNqeLoPPNO5gZfWg==
+  dependencies:
+    crypto-random-string "^2.0.0"
 
 universalify@^0.1.0:
   version "0.1.2"
