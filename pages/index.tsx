@@ -1,7 +1,15 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
+import Head from '../src/components/organisms/Head'
 
-const Home = () => <Title>Hello, world!</Title>
+const Home = () => {
+    return (
+        <>
+            <Head title={'gayars'} />
+            <Title>Hello, world!</Title>
+        </>
+    )
+}
 
 export default Home
 
