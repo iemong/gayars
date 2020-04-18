@@ -28,5 +28,5 @@ const Title = styled.p`
     display: flex;
     align-items: center;
     text-align: center;
-    background-color: ${COLORS.ORANGE};
+    background-color: ${COLORS.LIGHT_ORANGE};
 `
