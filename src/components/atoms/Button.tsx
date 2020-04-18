@@ -83,6 +83,7 @@ const ButtonStyle = styled.div<StyleProps>`
     font-size: 24px;
     width: 300px;
     height: 80px;
+    margin: 0 auto;
     border-radius: 10px;
     cursor: pointer;
     ${AdditionalStyle};

@@ -11,28 +11,21 @@ const Home = () => {
         <>
             <Head title={'gayars'} />
             <Header />
-            <Title>Hello, world!</Title>
-
-            <Button
-                onClick={() => {
-                    router.push('/rooms/[roomId]', '/rooms/1')
-                }}
-            >
-                会場を作る
-            </Button>
+            <Inner>
+                <Button
+                    onClick={() => {
+                        router.push('/rooms/[roomId]', '/rooms/1')
+                    }}
+                >
+                    会場を作る
+                </Button>
+            </Inner>
         </>
     )
 }
 
 export default Home
 
-const Title = styled.h1`
-    color: red;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    display: flex;
-    align-items: center;
-    text-align: center;
+const Inner = styled.div`
+    padding-top: 40px;
 `

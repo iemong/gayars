@@ -10,17 +10,28 @@ export default () => {
         <>
             <Head title={'参加者画面 | gayars'} />
             <Header isAudiencePage={true} />
-            <Text>参加者画面</Text>
-            <Flex>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-            </Flex>
+            <Inner>
+                <Text>参加者画面</Text>
+                <Flex>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                    <Button styleType={'square'}>笑い</Button>
+                </Flex>
+            </Inner>
         </>
     )
 }
+
+const Inner = styled.div`
+    padding: 40px 16px;
+`
 
 const Text = styled.p`
     font-style: normal;
@@ -30,10 +41,11 @@ const Text = styled.p`
     align-items: center;
     justify-content: center;
     color: ${COLORS.GREEN};
+    margin-bottom: 40px;
 `
 
 const Flex = styled.div`
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 `

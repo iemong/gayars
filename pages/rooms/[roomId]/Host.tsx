@@ -11,18 +11,24 @@ export default () => {
         <>
             <Head title={'発表者画面 | gayars'} />
             <Header />
-            <Text>発表者画面</Text>
-            <Button
-                styleType={'circle'}
-                onClick={() => {
-                    setCanPlay(!canPlay)
-                }}
-            >
-                {canPlay ? 'ON' : 'OFF'}
-            </Button>
+            <Inner>
+                <Text>発表者画面</Text>
+                <Button
+                    styleType={'circle'}
+                    onClick={() => {
+                        setCanPlay(!canPlay)
+                    }}
+                >
+                    {canPlay ? 'ON' : 'OFF'}
+                </Button>
+            </Inner>
         </>
     )
 }
+
+const Inner = styled.div`
+    padding-top: 40px;
+`
 
 const Text = styled.p`
     font-style: normal;
@@ -32,4 +38,5 @@ const Text = styled.p`
     align-items: center;
     justify-content: center;
     color: ${COLORS.ORANGE};
+    margin-bottom: 40px;
 `
