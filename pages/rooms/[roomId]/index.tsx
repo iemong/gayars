@@ -8,7 +8,7 @@ import Button from '../../../src/components/atoms/Button'
 
 export default () => {
     const router = useRouter()
-
+    const roomId = router.query.roomId
     return (
         <>
             <Head title={'会場を作成しました | gayars'} />
@@ -18,7 +18,7 @@ export default () => {
                 <Text>会場を作成しました</Text>
                 <Button
                     onClick={() => {
-                        router.push('/rooms/[roomId]/host', '/rooms/1/host')
+                        router.push('/rooms/[roomId]/host', `/rooms/${roomId}/host`)
                     }}
                 >
                     {'発表者 >'}
@@ -26,7 +26,7 @@ export default () => {
                 <StyledButton
                     styleType={'invert'}
                     onClick={() => {
-                        router.push('/rooms/[roomId]/audience', '/rooms/1/audience')
+                        router.push('/rooms/[roomId]/audience', `/rooms/${roomId}/audience`)
                     }}
                 >
                     {'参加者 >'}
