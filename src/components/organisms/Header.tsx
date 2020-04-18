@@ -2,10 +2,14 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 import { COLORS } from '../../assets/const'
 
-export default () => {
+type Props = {
+    isAudiencePage?: boolean
+}
+
+export default ({ isAudiencePage }: Props) => {
     return (
         <Wrapper>
-            <Title>GAYA - CHAT</Title>
+            <Title data-is-audience={isAudiencePage}>GAYA - CHAT</Title>
         </Wrapper>
     )
 }
@@ -29,4 +33,7 @@ const Title = styled.p`
     align-items: center;
     text-align: center;
     background-color: ${COLORS.LIGHT_ORANGE};
+    &[data-is-audience='true'] {
+        background-color: ${COLORS.GREEN};
+    }
 `
