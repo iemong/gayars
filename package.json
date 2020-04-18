@@ -60,6 +60,7 @@
         "build-storybook": "build-storybook"
     },
     "dependencies": {
+        "firebase": "^7.14.1",
         "react-dev-utils": "latest",
         "redux": "^4.0.4"
     },
