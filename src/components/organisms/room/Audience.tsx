@@ -25,7 +25,7 @@ export default () => {
                         handleClick(1)
                     }}
                 >
-                    笑い
+                    コブシ
                 </Button>
                 <Button
                     styleType={'square'}
@@ -33,7 +33,7 @@ export default () => {
                         handleClick(2)
                     }}
                 >
-                    笑い
+                    ハハハ
                 </Button>
                 <Button
                     styleType={'square'}
@@ -41,7 +41,7 @@ export default () => {
                         handleClick(3)
                     }}
                 >
-                    笑い
+                    拍手
                 </Button>
                 <Button
                     styleType={'square'}
@@ -49,14 +49,48 @@ export default () => {
                         handleClick(4)
                     }}
                 >
-                    笑い
+                    ヒュー！！
                 </Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
-                <Button styleType={'square'}>笑い</Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(5)
+                    }}
+                >
+                    弱めのヒュー
+                </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(6)
+                    }}
+                >
+                    なんでやねん
+                </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(7)
+                    }}
+                >
+                    オッス！
+                </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(8)
+                    }}
+                >
+                    🐴
+                </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(9)
+                    }}
+                >
+                    🐶
+                </Button>
             </Flex>
         </>
     )
