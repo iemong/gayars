@@ -2,11 +2,9 @@ import * as React from 'react'
 import styled from '@emotion/styled'
 import { useRouter } from 'next/router'
 import { Howl } from 'howler'
-import { COLORS } from '../../../src/assets/const'
-import Button from '../../../src/components/atoms/Button'
-import Header from '../../../src/components/organisms/Header'
-import Head from '../../../src/components/organisms/Head'
-import { database } from '../../../src/assets/api/firebase'
+import Button from '../../atoms/Button'
+import { COLORS } from '../../../assets/const'
+import { database } from '../../../assets/api/firebase'
 
 export default () => {
     const [canPlay, setCanPlay] = React.useState(false)
@@ -88,29 +86,20 @@ export default () => {
     React.useEffect(() => {
         if (canPlay) se9.current.play()
     }, [sound9])
-
     return (
         <>
-            <Head title={'発表者画面 | gayars'} />
-            <Header />
-            <Inner>
-                <Text>発表者画面</Text>
-                <Button
-                    styleType={'circle'}
-                    onClick={() => {
-                        setCanPlay(!canPlay)
-                    }}
-                >
-                    {canPlay ? 'ON' : 'OFF'}
-                </Button>
-            </Inner>
+            <Text>発表者画面</Text>
+            <Button
+                styleType={'circle'}
+                onClick={() => {
+                    setCanPlay(!canPlay)
+                }}
+            >
+                {canPlay ? 'ON' : 'OFF'}
+            </Button>
         </>
     )
 }
-
-const Inner = styled.div`
-    padding-top: 40px;
-`
 
 const Text = styled.p`
     font-style: normal;
