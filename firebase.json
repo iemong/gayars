@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "/rooms/**",
+        "destination": "/rooms/[roomId].html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
