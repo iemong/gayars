@@ -19,7 +19,7 @@ export default () => {
     const se5 = React.useRef(new Howl({ src: [`/sound/se_hyuuuu.mp3`] }))
     const se6 = React.useRef(new Howl({ src: [`/sound/se_nandeyanen.mp3`] }))
     const se7 = React.useRef(new Howl({ src: [`/sound/se_oh.mp3`] }))
-    const se8 = React.useRef(new Howl({ src: [`/sound/se_uma.mp3`] }))
+    const se8 = React.useRef(new Howl({ src: [`/sound/se_iijan.mp3`] }))
     const se9 = React.useRef(new Howl({ src: [`/sound/se_wan.mp3`] }))
 
     const [sound1, setSound1] = React.useState<{ [key: string]: number }>({ sound1: 0 })

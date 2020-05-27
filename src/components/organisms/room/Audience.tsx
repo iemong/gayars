@@ -81,7 +81,7 @@ export default () => {
                         handleClick(8)
                     }}
                 >
-                    🐴
+                    いいじゃん
                 </Button>
                 <Button
                     styleType={'square'}
