@@ -21,6 +21,7 @@ export default () => {
     const se7 = React.useRef(new Howl({ src: [`/sound/se_oh.mp3`] }))
     const se8 = React.useRef(new Howl({ src: [`/sound/se_iijan.mp3`] }))
     const se9 = React.useRef(new Howl({ src: [`/sound/se_wan.mp3`] }))
+    const se10 = React.useRef(new Howl({ src: [`/sound/se_uho.mp3`] }))
 
     const [sound1, setSound1] = React.useState<{ [key: string]: number }>({ sound1: 0 })
     const [sound2, setSound2] = React.useState<{ [key: string]: number }>({ sound2: 0 })
@@ -31,6 +32,7 @@ export default () => {
     const [sound7, setSound7] = React.useState<{ [key: string]: number }>({ sound7: 0 })
     const [sound8, setSound8] = React.useState<{ [key: string]: number }>({ sound8: 0 })
     const [sound9, setSound9] = React.useState<{ [key: string]: number }>({ sound9: 0 })
+    const [sound10, setSound10] = React.useState<{ [key: string]: number }>({ sound10: 0 })
 
     React.useEffect(() => {
         const soundRef = database.ref(`rooms/${roomId}`)
@@ -46,6 +48,7 @@ export default () => {
                 setSound7(snapshot.val().sound7)
                 setSound8(snapshot.val().sound8)
                 setSound9(snapshot.val().sound9)
+                setSound10(snapshot.val().sound10)
             }
             setIsPrepare(true)
         })
@@ -86,6 +89,11 @@ export default () => {
     React.useEffect(() => {
         if (canPlay) se9.current.play()
     }, [sound9])
+
+    React.useEffect(() => {
+        if (canPlay) se10.current.play()
+    }, [sound10])
+
     return (
         <>
             <Text>発表者画面</Text>
