@@ -28908,7 +28908,7 @@ function _templateObject() {
       lineNumber: 22
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u30B3\u30D6\u30B7"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
     onClick: function onClick() {
       handleClick(2);
@@ -28918,7 +28918,7 @@ function _templateObject() {
       lineNumber: 30
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u30CF\u30CF\u30CF"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
     onClick: function onClick() {
       handleClick(3);
@@ -28928,7 +28928,7 @@ function _templateObject() {
       lineNumber: 38
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u62CD\u624B"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
     onClick: function onClick() {
       handleClick(4);
@@ -28938,49 +28938,67 @@ function _templateObject() {
       lineNumber: 46
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u30D2\u30E5\u30FC\uFF01\uFF01"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
+    onClick: function onClick() {
+      handleClick(5);
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u5F31\u3081\u306E\u30D2\u30E5\u30FC"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
+    onClick: function onClick() {
+      handleClick(6);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 62
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u306A\u3093\u3067\u3084\u306D\u3093"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
+    onClick: function onClick() {
+      handleClick(7);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 70
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u30AA\u30C3\u30B9\uFF01"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
+    onClick: function onClick() {
+      handleClick(8);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 78
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\u3044\u3044\u3058\u3083\u3093"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
+    onClick: function onClick() {
+      handleClick(9);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 86
     },
     __self: this
-  }, "\u7B11\u3044"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "\uD83D\uDC36"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
     styleType: 'square',
+    onClick: function onClick() {
+      handleClick(10);
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 94
     },
     __self: this
-  }, "\u7B11\u3044")));
+  }, "\uD83E\uDD8D")));
 });
 var Text = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject(), _assets_const__WEBPACK_IMPORTED_MODULE_5__["COLORS"].GREEN);
 var Flex = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
@@ -29003,11 +29021,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _atoms_Button__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../atoms/Button */ "./src/components/atoms/Button.tsx");
-/* harmony import */ var _assets_const__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../assets/const */ "./src/assets/const.ts");
-/* harmony import */ var _assets_api_firebase__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../assets/api/firebase */ "./src/assets/api/firebase.ts");
-/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! howler */ "./node_modules/howler/dist/howler.js");
-/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(howler__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! howler */ "./node_modules/howler/dist/howler.js");
+/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(howler__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _atoms_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../atoms/Button */ "./src/components/atoms/Button.tsx");
+/* harmony import */ var _assets_const__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../assets/const */ "./src/assets/const.ts");
+/* harmony import */ var _assets_api_firebase__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../assets/api/firebase */ "./src/assets/api/firebase.ts");
 
 
 var _jsxFileName = "/Users/irie-shinnosuke/Documents/study/hackathon/remote-work/gayars/src/components/organisms/room/Host.tsx";
@@ -29043,32 +29061,35 @@ function _templateObject() {
 
   var router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
   var roomId = router.query.roomId;
-  var se1 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se1 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_bash.mp3"]
   }));
-  var se2 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se2 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_hahaha.mp3"]
   }));
-  var se3 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se3 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_hakushu.mp3"]
   }));
-  var se4 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se4 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_hyu.mp3"]
   }));
-  var se5 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se5 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_hyuuuu.mp3"]
   }));
-  var se6 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se6 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_nandeyanen.mp3"]
   }));
-  var se7 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se7 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_oh.mp3"]
   }));
-  var se8 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
-    src: ["/sound/se_uma.mp3"]
+  var se8 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_iijan.mp3"]
   }));
-  var se9 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_8__["Howl"]({
+  var se9 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
     src: ["/sound/se_wan.mp3"]
+  }));
+  var se10 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_uho.mp3"]
   }));
 
   var _React$useState5 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
@@ -29134,8 +29155,15 @@ function _templateObject() {
       sound9 = _React$useState22[0],
       setSound9 = _React$useState22[1];
 
+  var _React$useState23 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound10: 0
+  }),
+      _React$useState24 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState23, 2),
+      sound10 = _React$useState24[0],
+      setSound10 = _React$useState24[1];
+
   react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    var soundRef = _assets_api_firebase__WEBPACK_IMPORTED_MODULE_7__["database"].ref("rooms/".concat(roomId));
+    var soundRef = _assets_api_firebase__WEBPACK_IMPORTED_MODULE_8__["database"].ref("rooms/".concat(roomId));
     soundRef.on('value', function (snapshot) {
       console.log(snapshot.val());
 
@@ -29149,6 +29177,7 @@ function _templateObject() {
         setSound7(snapshot.val().sound7);
         setSound8(snapshot.val().sound8);
         setSound9(snapshot.val().sound9);
+        setSound10(snapshot.val().sound10);
       }
 
       setIsPrepare(true);
@@ -29181,25 +29210,28 @@ function _templateObject() {
   react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
     if (canPlay) se9.current.play();
   }, [sound9]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se10.current.play();
+  }, [sound10]);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, __jsx(Text, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 99
     },
     __self: this
-  }, "\u767A\u8868\u8005\u753B\u9762"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, "\u767A\u8868\u8005\u753B\u9762"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_6__["default"], {
     styleType: 'circle',
     onClick: function onClick() {
       setCanPlay(!canPlay);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 100
     },
     __self: this
   }, canPlay ? 'ON' : 'OFF'));
 });
-var Text = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].p(_templateObject(), _assets_const__WEBPACK_IMPORTED_MODULE_6__["COLORS"].ORANGE);
+var Text = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].p(_templateObject(), _assets_const__WEBPACK_IMPORTED_MODULE_7__["COLORS"].ORANGE);
 
 /***/ }),
 
