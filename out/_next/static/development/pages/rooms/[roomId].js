@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/rooms/[roomId]/host.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/rooms/[roomId].js"],{
 
 /***/ "./node_modules/@babel/runtime/helpers/arrayWithHoles.js":
 /*!***************************************************************!*\
@@ -25559,21 +25559,21 @@ var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frooms%2F%5BroomId%5D%2Fhost&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Fhost.tsx!./":
-/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frooms%2F%5BroomId%5D%2Fhost&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Fhost.tsx ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frooms%2F%5BroomId%5D&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Findex.tsx!./":
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frooms%2F%5BroomId%5D&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Findex.tsx ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/rooms/[roomId]/host", function() {
-      var mod = __webpack_require__(/*! ./pages/rooms/[roomId]/host.tsx */ "./pages/rooms/[roomId]/host.tsx")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/rooms/[roomId]", function() {
+      var mod = __webpack_require__(/*! ./pages/rooms/[roomId]/index.tsx */ "./pages/rooms/[roomId]/index.tsx")
       if(true) {
-        module.hot.accept(/*! ./pages/rooms/[roomId]/host.tsx */ "./pages/rooms/[roomId]/host.tsx", function() {
-          if(!next.router.components["/rooms/[roomId]/host"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/rooms/[roomId]/host.tsx */ "./pages/rooms/[roomId]/host.tsx")
-          next.router.update("/rooms/[roomId]/host", updatedPage)
+        module.hot.accept(/*! ./pages/rooms/[roomId]/index.tsx */ "./pages/rooms/[roomId]/index.tsx", function() {
+          if(!next.router.components["/rooms/[roomId]"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/rooms/[roomId]/index.tsx */ "./pages/rooms/[roomId]/index.tsx")
+          next.router.update("/rooms/[roomId]", updatedPage)
         })
       }
       return mod
@@ -28345,10 +28345,10 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 /***/ }),
 
-/***/ "./pages/rooms/[roomId]/host.tsx":
-/*!***************************************!*\
-  !*** ./pages/rooms/[roomId]/host.tsx ***!
-  \***************************************/
+/***/ "./pages/rooms/[roomId]/index.tsx":
+/*!****************************************!*\
+  !*** ./pages/rooms/[roomId]/index.tsx ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -28359,29 +28359,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
-/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! howler */ "./node_modules/howler/dist/howler.js");
-/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(howler__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _src_assets_const__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../src/assets/const */ "./src/assets/const.ts");
-/* harmony import */ var _src_components_atoms_Button__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../src/components/atoms/Button */ "./src/components/atoms/Button.tsx");
-/* harmony import */ var _src_components_organisms_Header__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../src/components/organisms/Header */ "./src/components/organisms/Header.tsx");
-/* harmony import */ var _src_components_organisms_Head__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../src/components/organisms/Head */ "./src/components/organisms/Head.tsx");
-/* harmony import */ var _src_assets_api_firebase__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../src/assets/api/firebase */ "./src/assets/api/firebase.ts");
+/* harmony import */ var _src_components_organisms_Header__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../src/components/organisms/Header */ "./src/components/organisms/Header.tsx");
+/* harmony import */ var _src_components_organisms_Head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../src/components/organisms/Head */ "./src/components/organisms/Head.tsx");
+/* harmony import */ var _src_components_organisms_room__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../src/components/organisms/room */ "./src/components/organisms/room/index.tsx");
+/* harmony import */ var _src_components_organisms_room_Audience__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../src/components/organisms/room/Audience */ "./src/components/organisms/room/Audience.tsx");
+/* harmony import */ var _src_components_organisms_room_Host__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../src/components/organisms/room/Host */ "./src/components/organisms/room/Host.tsx");
 
 
-var _jsxFileName = "/Users/irie-shinnosuke/Documents/study/hackathon/remote-work/gayars/pages/rooms/[roomId]/host.tsx";
+var _jsxFileName = "/Users/irie-shinnosuke/Documents/study/hackathon/remote-work/gayars/pages/rooms/[roomId]/index.tsx";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_2__["createElement"];
-
-function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-style: normal;\n    font-size: 24px;\n    line-height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: ", ";\n    margin-bottom: 40px;\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
 
 function _templateObject() {
   var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    padding-top: 40px;\n"]);
@@ -28400,198 +28386,56 @@ function _templateObject() {
 
 
 
-
-
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](''),
       _React$useState2 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState, 2),
-      canPlay = _React$useState2[0],
-      setCanPlay = _React$useState2[1];
+      pageName = _React$useState2[0],
+      setPageName = _React$useState2[1];
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
-      _React$useState4 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState3, 2),
-      isPrepare = _React$useState4[0],
-      setIsPrepare = _React$useState4[1];
-
-  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
-  var roomId = router.query.roomId;
-  var se1 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_bash.mp3"]
-  }));
-  var se2 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_hahaha.mp3"]
-  }));
-  var se3 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_hakushu.mp3"]
-  }));
-  var se4 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_hyu.mp3"]
-  }));
-  var se5 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_hyuuuu.mp3"]
-  }));
-  var se6 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_nandeyanen.mp3"]
-  }));
-  var se7 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_oh.mp3"]
-  }));
-  var se8 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_uma.mp3"]
-  }));
-  var se9 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
-    src: ["/sound/se_wan.mp3"]
-  }));
-
-  var _React$useState5 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound1: 0
-  }),
-      _React$useState6 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState5, 2),
-      sound1 = _React$useState6[0],
-      setSound1 = _React$useState6[1];
-
-  var _React$useState7 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound2: 0
-  }),
-      _React$useState8 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState7, 2),
-      sound2 = _React$useState8[0],
-      setSound2 = _React$useState8[1];
-
-  var _React$useState9 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound3: 0
-  }),
-      _React$useState10 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState9, 2),
-      sound3 = _React$useState10[0],
-      setSound3 = _React$useState10[1];
-
-  var _React$useState11 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound4: 0
-  }),
-      _React$useState12 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState11, 2),
-      sound4 = _React$useState12[0],
-      setSound4 = _React$useState12[1];
-
-  var _React$useState13 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound5: 0
-  }),
-      _React$useState14 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState13, 2),
-      sound5 = _React$useState14[0],
-      setSound5 = _React$useState14[1];
-
-  var _React$useState15 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound6: 0
-  }),
-      _React$useState16 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState15, 2),
-      sound6 = _React$useState16[0],
-      setSound6 = _React$useState16[1];
-
-  var _React$useState17 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound7: 0
-  }),
-      _React$useState18 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState17, 2),
-      sound7 = _React$useState18[0],
-      setSound7 = _React$useState18[1];
-
-  var _React$useState19 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound8: 0
-  }),
-      _React$useState20 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState19, 2),
-      sound8 = _React$useState20[0],
-      setSound8 = _React$useState20[1];
-
-  var _React$useState21 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
-    sound9: 0
-  }),
-      _React$useState22 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState21, 2),
-      sound9 = _React$useState22[0],
-      setSound9 = _React$useState22[1];
-
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    var soundRef = _src_assets_api_firebase__WEBPACK_IMPORTED_MODULE_10__["database"].ref("rooms/".concat(roomId));
-    soundRef.on('value', function (snapshot) {
-      console.log(snapshot.val());
-
-      if (isPrepare) {
-        setSound1(snapshot.val().sound1);
-        setSound2(snapshot.val().sound2);
-        setSound3(snapshot.val().sound3);
-        setSound4(snapshot.val().sound4);
-        setSound5(snapshot.val().sound5);
-        setSound6(snapshot.val().sound6);
-        setSound7(snapshot.val().sound7);
-        setSound8(snapshot.val().sound8);
-        setSound9(snapshot.val().sound9);
-      }
-
-      setIsPrepare(true);
-    });
-  }, [isPrepare]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se1.current.play();
-  }, [sound1]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se2.current.play();
-  }, [sound2]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se3.current.play();
-  }, [sound3]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se4.current.play();
-  }, [sound4]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se5.current.play();
-  }, [sound5]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se6.current.play();
-  }, [sound6]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se7.current.play();
-  }, [sound7]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se8.current.play();
-  }, [sound8]);
-  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
-    if (canPlay) se9.current.play();
-  }, [sound9]);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, __jsx(_src_components_organisms_Head__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    title: '発表者画面 | gayars',
+  console.log(pageName);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, __jsx(_src_components_organisms_Head__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    title: '会場を作成しました | gayars',
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 14
     },
     __self: this
-  }), __jsx(_src_components_organisms_Header__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }), __jsx(_src_components_organisms_Header__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 15
     },
     __self: this
   }), __jsx(Inner, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 17
     },
     __self: this
-  }, __jsx(Text, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: this
-  }, "\u767A\u8868\u8005\u753B\u9762"), __jsx(_src_components_atoms_Button__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    styleType: 'circle',
-    onClick: function onClick() {
-      setCanPlay(!canPlay);
+  }, !pageName && __jsx(_src_components_organisms_room__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    onClick: function onClick(page) {
+      setPageName(page);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 19
     },
     __self: this
-  }, canPlay ? 'ON' : 'OFF')));
+  }) || pageName === 'audience' && __jsx(_src_components_organisms_room_Audience__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }) || pageName === 'host' && __jsx(_src_components_organisms_room_Host__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  })));
 });
 var Inner = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].div(_templateObject());
-var Text = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].p(_templateObject2(), _src_assets_const__WEBPACK_IMPORTED_MODULE_6__["COLORS"].ORANGE);
 
 /***/ }),
 
@@ -28983,14 +28827,502 @@ var Title = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateO
 
 /***/ }),
 
-/***/ 9:
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Frooms%2F%5BroomId%5D%2Fhost&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Fhost.tsx ***!
-  \***********************************************************************************************************************************************************************************************************************/
+/***/ "./src/components/organisms/room/Audience.tsx":
+/*!****************************************************!*\
+  !*** ./src/components/organisms/room/Audience.tsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _atoms_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../atoms/Button */ "./src/components/atoms/Button.tsx");
+/* harmony import */ var _assets_const__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../assets/const */ "./src/assets/const.ts");
+/* harmony import */ var _assets_api_firebase__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../assets/api/firebase */ "./src/assets/api/firebase.ts");
+
+var _jsxFileName = "/Users/irie-shinnosuke/Documents/study/hackathon/remote-work/gayars/src/components/organisms/room/Audience.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1__["createElement"];
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    display: grid;\n    gap: 10px;\n    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-style: normal;\n    font-size: 24px;\n    line-height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: ", ";\n    margin-bottom: 40px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var _useRouter = Object(next_router__WEBPACK_IMPORTED_MODULE_3__["useRouter"])(),
+      roomId = _useRouter.query.roomId;
+
+  var handleClick = function handleClick(id) {
+    var soundRef = _assets_api_firebase__WEBPACK_IMPORTED_MODULE_6__["database"].ref("rooms/".concat(roomId, "/sound").concat(id));
+    soundRef.transaction(function (sound) {
+      return sound + 1;
+    });
+  };
+
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, __jsx(Text, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, "\u53C2\u52A0\u8005\u753B\u9762"), __jsx(Flex, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(1);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "\u30B3\u30D6\u30B7"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(2);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, "\u30CF\u30CF\u30CF"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(3);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38
+    },
+    __self: this
+  }, "\u62CD\u624B"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(4);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "\u30D2\u30E5\u30FC\uFF01\uFF01"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(5);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "\u5F31\u3081\u306E\u30D2\u30E5\u30FC"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(6);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, "\u306A\u3093\u3067\u3084\u306D\u3093"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(7);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70
+    },
+    __self: this
+  }, "\u30AA\u30C3\u30B9\uFF01"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(8);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, "\u3044\u3044\u3058\u3083\u3093"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(9);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, "\uD83D\uDC36"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    styleType: 'square',
+    onClick: function onClick() {
+      handleClick(10);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94
+    },
+    __self: this
+  }, "\uD83E\uDD8D")));
+});
+var Text = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject(), _assets_const__WEBPACK_IMPORTED_MODULE_5__["COLORS"].GREEN);
+var Flex = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+
+/***/ }),
+
+/***/ "./src/components/organisms/room/Host.tsx":
+/*!************************************************!*\
+  !*** ./src/components/organisms/room/Host.tsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var _babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! howler */ "./node_modules/howler/dist/howler.js");
+/* harmony import */ var howler__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(howler__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _atoms_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../atoms/Button */ "./src/components/atoms/Button.tsx");
+/* harmony import */ var _assets_const__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../assets/const */ "./src/assets/const.ts");
+/* harmony import */ var _assets_api_firebase__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../assets/api/firebase */ "./src/assets/api/firebase.ts");
+
+
+var _jsxFileName = "/Users/irie-shinnosuke/Documents/study/hackathon/remote-work/gayars/src/components/organisms/room/Host.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2__["createElement"];
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-style: normal;\n    font-size: 24px;\n    line-height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: ", ";\n    margin-bottom: 40px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
+      _React$useState2 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState, 2),
+      canPlay = _React$useState2[0],
+      setCanPlay = _React$useState2[1];
+
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_2__["useState"](false),
+      _React$useState4 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState3, 2),
+      isPrepare = _React$useState4[0],
+      setIsPrepare = _React$useState4[1];
+
+  var router = Object(next_router__WEBPACK_IMPORTED_MODULE_4__["useRouter"])();
+  var roomId = router.query.roomId;
+  var se1 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_bash.mp3"]
+  }));
+  var se2 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_hahaha.mp3"]
+  }));
+  var se3 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_hakushu.mp3"]
+  }));
+  var se4 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_hyu.mp3"]
+  }));
+  var se5 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_hyuuuu.mp3"]
+  }));
+  var se6 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_nandeyanen.mp3"]
+  }));
+  var se7 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_oh.mp3"]
+  }));
+  var se8 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_iijan.mp3"]
+  }));
+  var se9 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_wan.mp3"]
+  }));
+  var se10 = react__WEBPACK_IMPORTED_MODULE_2__["useRef"](new howler__WEBPACK_IMPORTED_MODULE_5__["Howl"]({
+    src: ["/sound/se_uho.mp3"]
+  }));
+
+  var _React$useState5 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound1: 0
+  }),
+      _React$useState6 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState5, 2),
+      sound1 = _React$useState6[0],
+      setSound1 = _React$useState6[1];
+
+  var _React$useState7 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound2: 0
+  }),
+      _React$useState8 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState7, 2),
+      sound2 = _React$useState8[0],
+      setSound2 = _React$useState8[1];
+
+  var _React$useState9 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound3: 0
+  }),
+      _React$useState10 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState9, 2),
+      sound3 = _React$useState10[0],
+      setSound3 = _React$useState10[1];
+
+  var _React$useState11 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound4: 0
+  }),
+      _React$useState12 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState11, 2),
+      sound4 = _React$useState12[0],
+      setSound4 = _React$useState12[1];
+
+  var _React$useState13 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound5: 0
+  }),
+      _React$useState14 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState13, 2),
+      sound5 = _React$useState14[0],
+      setSound5 = _React$useState14[1];
+
+  var _React$useState15 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound6: 0
+  }),
+      _React$useState16 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState15, 2),
+      sound6 = _React$useState16[0],
+      setSound6 = _React$useState16[1];
+
+  var _React$useState17 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound7: 0
+  }),
+      _React$useState18 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState17, 2),
+      sound7 = _React$useState18[0],
+      setSound7 = _React$useState18[1];
+
+  var _React$useState19 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound8: 0
+  }),
+      _React$useState20 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState19, 2),
+      sound8 = _React$useState20[0],
+      setSound8 = _React$useState20[1];
+
+  var _React$useState21 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound9: 0
+  }),
+      _React$useState22 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState21, 2),
+      sound9 = _React$useState22[0],
+      setSound9 = _React$useState22[1];
+
+  var _React$useState23 = react__WEBPACK_IMPORTED_MODULE_2__["useState"]({
+    sound10: 0
+  }),
+      _React$useState24 = Object(_babel_runtime_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_React$useState23, 2),
+      sound10 = _React$useState24[0],
+      setSound10 = _React$useState24[1];
+
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    var soundRef = _assets_api_firebase__WEBPACK_IMPORTED_MODULE_8__["database"].ref("rooms/".concat(roomId));
+    soundRef.on('value', function (snapshot) {
+      console.log(snapshot.val());
+
+      if (isPrepare) {
+        setSound1(snapshot.val().sound1);
+        setSound2(snapshot.val().sound2);
+        setSound3(snapshot.val().sound3);
+        setSound4(snapshot.val().sound4);
+        setSound5(snapshot.val().sound5);
+        setSound6(snapshot.val().sound6);
+        setSound7(snapshot.val().sound7);
+        setSound8(snapshot.val().sound8);
+        setSound9(snapshot.val().sound9);
+        setSound10(snapshot.val().sound10);
+      }
+
+      setIsPrepare(true);
+    });
+  }, [isPrepare]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se1.current.play();
+  }, [sound1]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se2.current.play();
+  }, [sound2]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se3.current.play();
+  }, [sound3]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se4.current.play();
+  }, [sound4]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se5.current.play();
+  }, [sound5]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se6.current.play();
+  }, [sound6]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se7.current.play();
+  }, [sound7]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se8.current.play();
+  }, [sound8]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se9.current.play();
+  }, [sound9]);
+  react__WEBPACK_IMPORTED_MODULE_2__["useEffect"](function () {
+    if (canPlay) se10.current.play();
+  }, [sound10]);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_2__["Fragment"], null, __jsx(Text, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, "\u767A\u8868\u8005\u753B\u9762"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    styleType: 'circle',
+    onClick: function onClick() {
+      setCanPlay(!canPlay);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: this
+  }, canPlay ? 'ON' : 'OFF'));
+});
+var Text = _emotion_styled__WEBPACK_IMPORTED_MODULE_3__["default"].p(_templateObject(), _assets_const__WEBPACK_IMPORTED_MODULE_7__["COLORS"].ORANGE);
+
+/***/ }),
+
+/***/ "./src/components/organisms/room/index.tsx":
+/*!*************************************************!*\
+  !*** ./src/components/organisms/room/index.tsx ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/styled */ "./node_modules/@emotion/styled/dist/styled.browser.esm.js");
+/* harmony import */ var _atoms_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../atoms/Button */ "./src/components/atoms/Button.tsx");
+/* harmony import */ var _assets_const__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../assets/const */ "./src/assets/const.ts");
+
+var _jsxFileName = "/Users/irie-shinnosuke/Documents/study/hackathon/remote-work/gayars/src/components/organisms/room/index.tsx";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1__["createElement"];
+
+function _templateObject2() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    margin-top: 20px;\n"]);
+
+  _templateObject2 = function _templateObject2() {
+    return data;
+  };
+
+  return data;
+}
+
+function _templateObject() {
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n    font-style: normal;\n    font-size: 24px;\n    line-height: 28px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: ", ";\n    margin-bottom: 40px;\n"]);
+
+  _templateObject = function _templateObject() {
+    return data;
+  };
+
+  return data;
+}
+
+
+
+
+
+
+var RoomIndex = function RoomIndex(props) {
+  var _onClick = props.onClick;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, __jsx(Text, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, "\u4F1A\u5834\u3092\u4F5C\u6210\u3057\u307E\u3057\u305F"), __jsx(_atoms_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    onClick: function onClick() {
+      return _onClick('host');
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, '発表者 >'), __jsx(StyledButton, {
+    styleType: 'invert',
+    onClick: function onClick() {
+      _onClick('audience');
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, '参加者 >'));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (RoomIndex);
+var Text = _emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"].p(_templateObject(), _assets_const__WEBPACK_IMPORTED_MODULE_4__["COLORS"].ORANGE);
+var StyledButton = Object(_emotion_styled__WEBPACK_IMPORTED_MODULE_2__["default"])(_atoms_Button__WEBPACK_IMPORTED_MODULE_3__["default"])(_templateObject2());
+
+/***/ }),
+
+/***/ 7:
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Frooms%2F%5BroomId%5D&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Findex.tsx ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Frooms%2F%5BroomId%5D%2Fhost&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Fhost.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frooms%2F%5BroomId%5D%2Fhost&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Fhost.tsx!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Frooms%2F%5BroomId%5D&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Findex.tsx! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Frooms%2F%5BroomId%5D&absolutePagePath=%2FUsers%2Firie-shinnosuke%2FDocuments%2Fstudy%2Fhackathon%2Fremote-work%2Fgayars%2Fpages%2Frooms%2F%5BroomId%5D%2Findex.tsx!./");
 
 
 /***/ }),
@@ -29006,5 +29338,5 @@ module.exports = dll_2d548d91c0ce075c3af9;
 
 /***/ })
 
-},[[9,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=host.js.map
+},[[7,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=[roomId].js.map

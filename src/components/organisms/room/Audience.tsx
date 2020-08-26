@@ -81,7 +81,7 @@ export default () => {
                         handleClick(8)
                     }}
                 >
-                    🐴
+                    いいじゃん
                 </Button>
                 <Button
                     styleType={'square'}
@@ -90,6 +90,14 @@ export default () => {
                     }}
                 >
                     🐶
+                </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(10)
+                    }}
+                >
+                    🦍
                 </Button>
             </Flex>
         </>
