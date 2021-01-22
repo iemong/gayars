@@ -91,6 +91,7 @@ const ButtonStyle = styled.div<StyleProps>`
     &:hover {
         filter: saturate(130%);
     }
+    &:focus,
     &:active {
         filter: saturate(160%);
     }
