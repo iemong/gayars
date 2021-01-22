@@ -1,33 +1,34 @@
+import { ParsedUrlQuery } from 'querystring'
 import * as React from 'react'
 import styled from '@emotion/styled'
+import { DocumentContext } from 'next/document'
 import Header from '../../../src/components/organisms/Header'
 import Head from '../../../src/components/organisms/Head'
 import RoomIndex from '../../../src/components/organisms/room'
-import Audience from '../../../src/components/organisms/room/Audience'
-import Host from '../../../src/components/organisms/room/Host'
 
-export default () => {
-    const [pageName, setPageName] = React.useState('')
-    console.log(pageName)
+type Props = {
+    query: ParsedUrlQuery
+}
+
+const RoomIndexPage = (props: Props) => {
+    const {
+        query: { roomId },
+    } = props
+
     return (
         <>
             <Head title={'会場を作成しました | gayars'} />
             <Header />
-
             <Inner>
-                {(!pageName && (
-                    <RoomIndex
-                        onClick={(page: string) => {
-                            setPageName(page)
-                        }}
-                    />
-                )) ||
-                    (pageName === 'audience' && <Audience />) ||
-                    (pageName === 'host' && <Host />)}
+                <RoomIndex roomId={roomId} />
             </Inner>
         </>
     )
 }
+
+RoomIndexPage.getInitialProps = async ({ query }: DocumentContext) => ({ query })
+
+export default RoomIndexPage
 
 const Inner = styled.div`
     padding-top: 40px;
