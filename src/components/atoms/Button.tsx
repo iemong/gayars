@@ -86,5 +86,11 @@ const ButtonStyle = styled.div<StyleProps>`
     margin: 0 auto;
     border-radius: 10px;
     cursor: pointer;
+    &:hover {
+        filter: saturate(130%);
+    }
+    &:active {
+        filter: saturate(160%);
+    }
     ${AdditionalStyle};
 `
