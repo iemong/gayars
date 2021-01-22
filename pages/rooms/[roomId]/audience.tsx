@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { Head } from 'next/document'
+import styled from '@emotion/styled'
+import Head from '../../../src/components/organisms/Head'
 import Audience from '../../../src/components/organisms/room/Audience'
 import Header from '../../../src/components/organisms/Header'
 
@@ -8,9 +9,15 @@ const AudiencePage = () => {
         <>
             <Head title={'参加者画面 | gayars'} />
             <Header />
-            <Audience />
+            <Inner>
+                <Audience />
+            </Inner>
         </>
     )
 }
 
 export default AudiencePage
+
+const Inner = styled.div`
+    padding-top: 40px;
+`
