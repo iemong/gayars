@@ -87,6 +87,7 @@ const ButtonStyle = styled.div<StyleProps>`
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
     &:hover {
         filter: saturate(130%);
     }
