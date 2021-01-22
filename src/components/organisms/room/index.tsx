@@ -1,24 +1,36 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
+import { useRouter } from 'next/router'
 import Button from '../../atoms/Button'
 import { COLORS } from '../../../assets/const'
 
 type Props = {
-    onClick: (page: string) => void
+    roomId: string
 }
 
 const RoomIndex = (props: Props) => {
-    const { onClick } = props
+    const { roomId } = props
+    const router = useRouter()
+
+    const handleClickMoveHost = () => {
+        router.push({
+            pathname: '/rooms/[roomId]/audience',
+            query: { roomId },
+        })
+    }
+
+    const handleClickMoveAudience = () => {
+        router.push({
+            pathname: '/rooms/[roomId]/host',
+            query: { roomId },
+        })
+    }
+
     return (
         <>
             <Text>会場を作成しました</Text>
-            <Button onClick={() => onClick('host')}>{'発表者 >'}</Button>
-            <StyledButton
-                styleType={'invert'}
-                onClick={() => {
-                    onClick('audience')
-                }}
-            >
+            <Button onClick={handleClickMoveHost}>{'発表者 >'}</Button>
+            <StyledButton styleType={'invert'} onClick={handleClickMoveAudience}>
                 {'参加者 >'}
             </StyledButton>
         </>
