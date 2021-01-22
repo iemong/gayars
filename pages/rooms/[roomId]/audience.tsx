@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Head } from 'next/document'
+import Head from '../../../src/components/organisms/Head'
 import Audience from '../../../src/components/organisms/room/Audience'
 import Header from '../../../src/components/organisms/Header'
 

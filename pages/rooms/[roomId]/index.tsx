@@ -1,4 +1,3 @@
-import { ParsedUrlQuery } from 'querystring'
 import * as React from 'react'
 import styled from '@emotion/styled'
 import { DocumentContext } from 'next/document'
@@ -7,7 +6,9 @@ import Head from '../../../src/components/organisms/Head'
 import RoomIndex from '../../../src/components/organisms/room'
 
 type Props = {
-    query: ParsedUrlQuery
+    query: {
+        roomId: string
+    }
 }
 
 const RoomIndexPage = (props: Props) => {
