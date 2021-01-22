@@ -8,6 +8,14 @@
     ],
     "rewrites": [
       {
+        "source": "/rooms/**/host",
+        "destination": "/rooms/[roomId]/host.html"
+      },
+      {
+        "source": "/rooms/**/audience",
+        "destination": "/rooms/[roomId]/audience.html"
+      },
+      {
         "source": "/rooms/**",
         "destination": "/rooms/[roomId].html"
       },
