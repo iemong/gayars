@@ -14,14 +14,14 @@ const RoomIndex = (props: Props) => {
 
     const handleClickMoveHost = () => {
         router.push({
-            pathname: '/rooms/[roomId]/audience',
+            pathname: '/rooms/[roomId]/host',
             query: { roomId },
         })
     }
 
     const handleClickMoveAudience = () => {
         router.push({
-            pathname: '/rooms/[roomId]/host',
+            pathname: '/rooms/[roomId]/audience',
             query: { roomId },
         })
     }
