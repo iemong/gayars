@@ -131,6 +131,14 @@ export default () => {
                 >
                     すごいすごい
                 </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(15)
+                    }}
+                >
+                    おぉー
+                </Button>
             </Flex>
         </>
     )
