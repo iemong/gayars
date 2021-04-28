@@ -126,7 +126,7 @@ export default () => {
                 <Button
                     styleType={'square'}
                     onClick={() => {
-                        handleClick(13)
+                        handleClick(14)
                     }}
                 >
                     すごいすごい
