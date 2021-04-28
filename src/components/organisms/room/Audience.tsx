@@ -123,6 +123,14 @@ export default () => {
                 >
                     中笑い
                 </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(13)
+                    }}
+                >
+                    すごいすごい
+                </Button>
             </Flex>
         </>
     )
