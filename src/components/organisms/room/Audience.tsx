@@ -12,7 +12,7 @@ export default () => {
 
     const handleClick = (id: number) => {
         const soundRef = database.ref(`rooms/${roomId}/sound${id}`)
-        soundRef.transaction(sound => sound + 1)
+        soundRef.transaction((sound) => sound + 1)
     }
 
     return (
@@ -98,6 +98,14 @@ export default () => {
                     }}
                 >
                     🦍
+                </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(11)
+                    }}
+                >
+                    やるじゃないか
                 </Button>
             </Flex>
         </>
