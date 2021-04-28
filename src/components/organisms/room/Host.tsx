@@ -119,7 +119,7 @@ export default () => {
     }, [sound13])
 
     React.useEffect(() => {
-        if (canPlay) se13.current.play()
+        if (canPlay) se14.current.play()
     }, [sound14])
 
     return (
