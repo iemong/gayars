@@ -60,7 +60,7 @@ export default () => {
                 setSound11(snapshot.val().sound11)
                 setSound12(snapshot.val().sound12)
                 setSound13(snapshot.val().sound13)
-                setSound14(snapshot.val().sound13)
+                setSound14(snapshot.val().sound14)
             }
             setIsPrepare(true)
         })
