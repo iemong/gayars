@@ -23,6 +23,8 @@ export default () => {
     const se9 = React.useRef(new Howl({ src: [`/sound/se_wan.mp3`] }))
     const se10 = React.useRef(new Howl({ src: [`/sound/se_uho.mp3`] }))
     const se11 = React.useRef(new Howl({ src: [`/sound/se_yarujanaika.mp3`] }))
+    const se12 = React.useRef(new Howl({ src: [`/sound/se_oo-warai.mp3`] }))
+    const se13 = React.useRef(new Howl({ src: [`/sound/se_chu-warai.mp3`] }))
 
     const [sound1, setSound1] = React.useState<{ [key: string]: number }>({ sound1: 0 })
     const [sound2, setSound2] = React.useState<{ [key: string]: number }>({ sound2: 0 })
@@ -35,6 +37,8 @@ export default () => {
     const [sound9, setSound9] = React.useState<{ [key: string]: number }>({ sound9: 0 })
     const [sound10, setSound10] = React.useState<{ [key: string]: number }>({ sound10: 0 })
     const [sound11, setSound11] = React.useState<{ [key: string]: number }>({ sound11: 0 })
+    const [sound12, setSound12] = React.useState<{ [key: string]: number }>({ sound12: 0 })
+    const [sound13, setSound13] = React.useState<{ [key: string]: number }>({ sound13: 0 })
 
     React.useEffect(() => {
         const soundRef = database.ref(`rooms/${roomId}`)
@@ -52,6 +56,8 @@ export default () => {
                 setSound9(snapshot.val().sound9)
                 setSound10(snapshot.val().sound10)
                 setSound11(snapshot.val().sound11)
+                setSound12(snapshot.val().sound12)
+                setSound13(snapshot.val().sound13)
             }
             setIsPrepare(true)
         })
@@ -100,6 +106,14 @@ export default () => {
     React.useEffect(() => {
         if (canPlay) se11.current.play()
     }, [sound11])
+
+    React.useEffect(() => {
+        if (canPlay) se12.current.play()
+    }, [sound12])
+
+    React.useEffect(() => {
+        if (canPlay) se13.current.play()
+    }, [sound13])
 
     return (
         <>

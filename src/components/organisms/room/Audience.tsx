@@ -107,6 +107,22 @@ export default () => {
                 >
                     やるじゃないか
                 </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(12)
+                    }}
+                >
+                    大笑い
+                </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(13)
+                    }}
+                >
+                    中笑い
+                </Button>
             </Flex>
         </>
     )
