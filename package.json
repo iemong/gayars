@@ -78,6 +78,6 @@
         "assets": "src/assets"
     },
     "resolutions": {
-        "prismjs": "1.21.0"
+        "prismjs": "1.23.0"
     }
 }
