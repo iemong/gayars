@@ -11,7 +11,7 @@ type Props = {
     }
 }
 
-const RoomIndexPage = (props: Props) => {
+const RoomIndexPage = (props: Props): JSX.Element => {
     const {
         query: { roomId },
     } = props

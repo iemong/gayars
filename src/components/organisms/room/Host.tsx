@@ -6,7 +6,7 @@ import Button from '../../atoms/Button'
 import { COLORS } from '../../../assets/const'
 import { database } from '../../../assets/api/firebase'
 
-export default () => {
+const Host = (): JSX.Element => {
     const [canPlay, setCanPlay] = React.useState(false)
     const [isPrepare, setIsPrepare] = React.useState(false)
     const router = useRouter()
@@ -143,6 +143,8 @@ export default () => {
         </>
     )
 }
+
+export default Host
 
 const Text = styled.p`
     font-style: normal;

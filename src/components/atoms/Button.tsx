@@ -22,7 +22,7 @@ type Props = StyleProps & {
     onClick?: () => void
 }
 
-const Button = (props: Props) => {
+const Button = (props: Props): JSX.Element => {
     const { children, styleType = 'default', className, width, height, onClick } = props
 
     return (

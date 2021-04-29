@@ -5,7 +5,7 @@ type Props = {
     children: JSX.Element | string
 }
 
-const Main = (props: Props) => {
+const Main = (props: Props): JSX.Element => {
     const { children } = props
     return (
         <React.Fragment>

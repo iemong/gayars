@@ -4,7 +4,7 @@ import Head from '../../../src/components/organisms/Head'
 import Audience from '../../../src/components/organisms/room/Audience'
 import Header from '../../../src/components/organisms/Header'
 
-const AudiencePage = () => {
+const AudiencePage = (): JSX.Element => {
     return (
         <>
             <Head title={'参加者画面 | gayars'} />

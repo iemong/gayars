@@ -8,7 +8,7 @@ type Props = {
     roomId: string
 }
 
-const RoomIndex = (props: Props) => {
+const RoomIndex = (props: Props): JSX.Element => {
     const { roomId } = props
     const router = useRouter()
 

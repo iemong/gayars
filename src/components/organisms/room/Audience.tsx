@@ -5,7 +5,7 @@ import Button from '../../atoms/Button'
 import { COLORS } from '../../../assets/const'
 import { database } from '../../../assets/api/firebase'
 
-export default () => {
+const Audience = (): JSX.Element => {
     const {
         query: { roomId },
     } = useRouter()
@@ -143,6 +143,8 @@ export default () => {
         </>
     )
 }
+
+export default Audience
 
 const Text = styled.p`
     font-style: normal;

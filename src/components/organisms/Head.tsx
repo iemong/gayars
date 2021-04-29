@@ -9,7 +9,7 @@ type Props = {
     url?: string
 }
 
-export default ({ title, description, keyword, image, url }: Props): JSX.Element => {
+const HeadComponent = ({ title, description, keyword, image, url }: Props): JSX.Element => {
     return (
         <Head>
             <title>{title}</title>
@@ -32,3 +32,5 @@ export default ({ title, description, keyword, image, url }: Props): JSX.Element
         </Head>
     )
 }
+
+export default HeadComponent

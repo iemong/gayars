@@ -7,7 +7,7 @@ import Header from '../src/components/organisms/Header'
 import Button from '../src/components/atoms/Button'
 import { database } from '../src/assets/api/firebase'
 
-const Home = () => {
+const Home = (): JSX.Element => {
     const router = useRouter()
     const [isSending, setIsSending] = React.useState(false)
     const generateRoom = () => {

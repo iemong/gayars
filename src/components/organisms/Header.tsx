@@ -6,13 +6,15 @@ type Props = {
     isAudiencePage?: boolean
 }
 
-export default ({ isAudiencePage }: Props) => {
+const Header = ({ isAudiencePage }: Props): JSX.Element => {
     return (
         <Wrapper>
             <Title data-is-audience={isAudiencePage}>GAYA - CHAT</Title>
         </Wrapper>
     )
 }
+
+export default Header
 
 const Wrapper = styled.header`
     width: 100%;
