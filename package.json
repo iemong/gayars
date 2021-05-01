@@ -10,7 +10,7 @@
         "@emotion/core": "10.1.1",
         "@emotion/styled": "10.0.27",
         "@storybook/addon-actions": "6.0.18",
-        "@storybook/addon-console": "1.2.1",
+        "@storybook/addon-console": "1.2.3",
         "@storybook/addon-info": "5.3.19",
         "@storybook/addon-knobs": "6.0.18",
         "@storybook/addon-links": "6.0.18",
