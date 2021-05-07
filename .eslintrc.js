@@ -6,6 +6,7 @@ module.exports = {
         'plugin:prettier/recommended',
         'plugin:import/errors',
         'plugin:import/warnings',
+        'plugin:react-hooks/recommended',
     ],
     parserOptions: {
         ecmaVersion: 2019,
@@ -16,6 +17,8 @@ module.exports = {
     },
     rules: {
         'import/order': ['error'],
+        'react-hooks/rules-of-hooks': ['error'],
+        'react-hooks/exhaustive-deps': ['warn'],
     },
     settings: {
         'import/resolver': {
