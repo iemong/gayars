@@ -32,7 +32,7 @@
         "eslint-plugin-react-hooks": "4.2.0",
         "express": "4.17.1",
         "fork-ts-checker-webpack-plugin": "6.2.12",
-        "howler": "2.2.1",
+        "howler": "2.2.3",
         "luxon": "1.27.0",
         "module-alias": "2.2.2",
         "module-resolver": "1.0.0",
