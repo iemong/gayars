@@ -44,7 +44,7 @@
         "react-scripts": "4.0.3",
         "redux-logger": "3.0.6",
         "typescript": "4.3.5",
-        "unique-string": "2.0.0"
+        "unique-string": "3.0.0"
     },
     "scripts": {
         "dev": "next",
