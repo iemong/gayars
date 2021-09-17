@@ -139,6 +139,14 @@ const Audience = (): JSX.Element => {
                 >
                     おぉー
                 </Button>
+                <Button
+                    styleType={'square'}
+                    onClick={() => {
+                        handleClick(16)
+                    }}
+                >
+                    いいとも〜
+                </Button>
             </Flex>
         </>
     )
