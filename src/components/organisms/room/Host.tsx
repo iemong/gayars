@@ -27,6 +27,7 @@ const Host = (): JSX.Element => {
     const se13 = React.useRef(new Howl({ src: [`/sound/se_chu-warai.mp3`] }))
     const se14 = React.useRef(new Howl({ src: [`/sound/se_sugoi.mp3`] }))
     const se15 = React.useRef(new Howl({ src: [`/sound/se_oo-.mp3`] }))
+    const se16 = React.useRef(new Howl({ src: [`/sound/se_iitomo.mp3`] }))
 
     const [sound1, setSound1] = React.useState<{ [key: string]: number }>({ sound1: 0 })
     const [sound2, setSound2] = React.useState<{ [key: string]: number }>({ sound2: 0 })
@@ -43,6 +44,7 @@ const Host = (): JSX.Element => {
     const [sound13, setSound13] = React.useState<{ [key: string]: number }>({ sound13: 0 })
     const [sound14, setSound14] = React.useState<{ [key: string]: number }>({ sound14: 0 })
     const [sound15, setSound15] = React.useState<{ [key: string]: number }>({ sound15: 0 })
+    const [sound16, setSound16] = React.useState<{ [key: string]: number }>({ sound16: 0 })
 
     React.useEffect(() => {
         const soundRef = database.ref(`rooms/${roomId}`)
@@ -64,6 +66,7 @@ const Host = (): JSX.Element => {
                 setSound13(snapshot.val().sound13)
                 setSound14(snapshot.val().sound14)
                 setSound15(snapshot.val().sound15)
+                setSound16(snapshot.val().sound16)
             }
             setIsPrepare(true)
         })
@@ -128,6 +131,10 @@ const Host = (): JSX.Element => {
     React.useEffect(() => {
         if (canPlay) se15.current.play()
     }, [sound15])
+
+    React.useEffect(() => {
+        if (canPlay) se16.current.play()
+    }, [sound16])
 
     return (
         <>
