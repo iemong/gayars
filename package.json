@@ -55,7 +55,7 @@
         "generate": "next export"
     },
     "dependencies": {
-        "firebase": "^8.0.0",
+        "firebase": "^9.0.0",
         "react-dev-utils": "^11.0.4",
         "redux": "^4.0.5"
     },
@@ -68,6 +68,6 @@
         "assets": "src/assets"
     },
     "resolutions": {
-        "prismjs": "1.25.0"
+        "prismjs": "1.23.0"
     }
 }
