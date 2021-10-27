@@ -52,7 +52,7 @@
         "start": "next start",
         "lint": "eslint --ext .ts,.tsx .",
         "deploy": "firebase deploy",
-        "generate": "next export"
+        "generate": "yarn build && next export"
     },
     "dependencies": {
         "firebase": "^9.0.0",
