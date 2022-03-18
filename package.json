@@ -12,7 +12,7 @@
         "@emotion/react": "11.8.2",
         "@emotion/styled": "11.8.1",
         "@types/howler": "2.2.6",
-        "@types/luxon": "2.3.0",
+        "@types/luxon": "2.3.1",
         "@types/node": "16.11.22",
         "@types/react": "17.0.40",
         "@types/redux-logger": "3.0.9",
