@@ -3752,10 +3752,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/howler@2.2.7":
-  version "2.2.7"
-  resolved "https://registry.yarnpkg.com/@types/howler/-/howler-2.2.7.tgz#5acfbed57f9e1d99b8dabe1b824729e1c1ea1fae"
-  integrity sha512-PEZldwZqJJw1PWRTpupyC7ajVTZA8aHd8nB/Y0n6zRZi5u8ktYDntsHj13ltEiBRqWwF06pASxBEvCTxniG8eA==
+"@types/howler@2.2.8":
+  version "2.2.8"
+  resolved "https://registry.yarnpkg.com/@types/howler/-/howler-2.2.8.tgz#bd40cc455f02b5f4d6719acf4c6cb9f4a4a17a80"
+  integrity sha512-7OK+cGHTWIDCOvBlEc61Lzj2tJhCpmeqiqdeNbZvTxLHluBMF6xz/2wjoQkK1M8mJIStp40OdPnkp8xIvwwsuw==
 
 "@types/html-minifier-terser@^6.0.0":
   version "6.1.0"
