@@ -15,7 +15,7 @@
         "@types/luxon": "3.3.3",
         "@types/node": "16.11.22",
         "@types/react": "18.0.1",
-        "@types/redux-logger": "3.0.9",
+        "@types/redux-logger": "3.0.11",
         "@types/unique-string": "2.0.0",
         "@typescript-eslint/eslint-plugin": "5.54.1",
         "@typescript-eslint/parser": "5.54.1",
