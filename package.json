@@ -13,7 +13,7 @@
         "@emotion/styled": "11.11.0",
         "@types/howler": "2.2.11",
         "@types/luxon": "3.3.7",
-        "@types/node": "16.11.22",
+        "@types/node": "16.18.91",
         "@types/react": "18.0.1",
         "@types/redux-logger": "3.0.12",
         "@types/unique-string": "2.0.0",
